@@ -80,6 +80,12 @@ body{
   }
 }
 
+/*------------*/
+
+a{
+  color: inherit;
+}
+
 .selected{
 	color: #1d2b2a;
 	background-color: #d4f8e3;

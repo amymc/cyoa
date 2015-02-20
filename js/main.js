@@ -9,13 +9,13 @@
         "Well there are still other options...^1000 <br/> Do you have $1,000,000 to invest? ^1000 <br/> <div class='the-options'> <div class='5 option'> No, but I'm willing to take some risks to acquire it. </div> <div class='6 option'> As if! </div> </div>", 
         "<div class='game-over'>You begin to accumulate the required capital through committing identity theft. ^1000 <br/> The obsence wealth you are amassing may not buy you happiness but it will buy you a visa...^1000 <br/> So close, but yet so far... ^1000 <br/> You have been caught by the FBI. ^1000 <br/> You are set to join the world's largest prison population for 6 years. ^1000 </div>",
         "<div class='game-over'>Last chance! ^1000 <br/> You enter the green card lottery and wait patiently... ^1000 <br/> Of course you don't win. Only 50,000 are given out each year... ^1000 </div>",
-        "GAME OVER. ^1000<br/><br/> Want to play again? ^1000 <br/>There's no point. <br/>The outcome will never change."];
+        "GAME OVER. ^1000<br/><br/> Want to play again? ^1000 <br/>There's no point. ^1000 <br/>The outcome will never change. ^1000 <br/><br/><br/><br/>You can check out the code for this game <a href='https://github.com/amymc/cyoa'>here</a> if you're into that sort of thing"];
 
     var optionSelected;
     var typingComplete = true; 
 
     $(window, ".option").keydown(function (event) {
-      
+        var option = $('.option');
 
         //text will only be typed when typingcomplete === true
         //this prevents animation from starting when previous animation is still in progress    
@@ -77,17 +77,17 @@
     }
 
     function onAnimationEnd() {
-        var option = $('.option');
+        
         //set typingComplete back to true to allow for further animation to occur
         typingComplete = true;
         //set first option as selected by default
-        optionSelected = option.eq(0).addClass('selected');
+        optionSelected = $('.option').eq(0).addClass('selected');
 
         //if screen contains a 'game-over' div then take the player to the final screen
         if ($(".game-over").length === 1){
             nextText(responses[responses.length-1]);
         }
-        return option;
+       // return option;
     }
 
 })();
