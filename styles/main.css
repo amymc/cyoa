@@ -1,0 +1,88 @@
+/*--- CSS taken from this brilliant 404 page - http://allison.house/404 ----*/
+
+body{
+	position: relative;
+	background-color: #1d2b2a;
+	background-image: url(/img/stripe.png), url(/img/noise.png);
+	background-repeat: repeat-x, repeat;
+	background-position: 0 0%;
+	background-attachment: fixed;
+	font-size: 21px;
+	font-family: Inconsolata, "Lucida Console", Monaco, Courier, monospace;
+	font-smooth: never;
+	line-height: 2em;
+	color: #d4f8e3;
+	-webkit-font-smoothing: none;
+	text-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
+	-moz-animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+	-webkit-animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+	animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+}
+
+@-moz-keyframes blink {
+  to {
+    background-color: #223332;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    background-color: #223332;
+  }
+}
+@keyframes blink {
+  to {
+    background-color: #223332;
+  }
+}
+@-moz-keyframes skip {
+  to {
+    background-position: 0 100%;
+  }
+}
+@-webkit-keyframes skip {
+  to {
+    background-position: 0 100%;
+  }
+}
+@keyframes skip {
+  to {
+    background-position: 0 100%;
+  }
+}
+@-moz-keyframes flicker {
+  to {
+    color: #bddeca;
+  }
+}
+@-webkit-keyframes flicker {
+  to {
+    color: #bddeca;
+  }
+}
+@keyframes flicker {
+  to {
+    color: #bddeca;
+  }
+}
+@-moz-keyframes ready {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes ready {
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes ready {
+  to {
+    visibility: hidden;
+  }
+}
+
+.selected{
+	color: #1d2b2a;
+	background-color: #d4f8e3;
+	outline: none;
+	text-shadow: none;
+};
