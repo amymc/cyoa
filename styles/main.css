@@ -3,7 +3,7 @@
 body{
 	position: relative;
 	background-color: #1d2b2a;
-	background-image: url(/img/stripe.png), url(/img/noise.png);
+	background-image: url(../img/stripe.png), url(../img/noise.png);
 	background-repeat: repeat-x, repeat;
 	background-position: 0 0%;
 	background-attachment: fixed;
