@@ -20,7 +20,6 @@
         //text will only be typed when typingcomplete === true
         //this prevents animation from starting when previous animation is still in progress    
         if (event.which === 13 && typingComplete === true) {//enter key
-            //event.preventDefault(); -what does this do??
 
             if(optionSelected){
                 //get the index of the next response to be displayed from the class name of the current option
