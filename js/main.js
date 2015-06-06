@@ -11,14 +11,14 @@
         "<div class='game-over'>Last chance! ^1000 <br/> You enter the green card lottery and wait patiently... ^1000 <br/> Of course you don't win. Only 50,000 are given out each year... ^1000 </div>",
         "GAME OVER. ^1000<br/><br/> Want to play again? ^1000 <br/>There's no point. ^1000 <br/>The outcome will never change. ^1000 <br/><br/><br/><br/>You can check out the code for this game <a href='https://github.com/amymc/cyoa'>here</a> if you're into that sort of thing."];
 
-    var optionSelected;
-    var typingComplete = true; 
+    var optionSelected,
+        typingComplete = true;
 
     $(window, ".option").keydown(function (event) {
         var option = $('.option');
 
         //text will only be typed when typingcomplete === true
-        //this prevents animation from starting when previous animation is still in progress    
+        //this prevents animation from starting when previous animation is still in progress
         if (event.which === 13 && typingComplete === true) {//enter key
 
             if(optionSelected){
@@ -71,7 +71,7 @@
                 typeSpeed: 20,
                 callback: onAnimationEnd
             });
-            response = [];
+            //response = [];
         });
     }
 
@@ -86,7 +86,6 @@
         if ($(".game-over").length === 1){
             nextText(responses[responses.length-1]);
         }
-       // return option;
     }
 
 })();
